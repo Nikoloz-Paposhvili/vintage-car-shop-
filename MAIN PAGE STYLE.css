@@ -1,0 +1,1254 @@
+body {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .parallax1 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/GTR.jpg);
+
+    /* Full height */
+    height: 150vh;
+  }
+
+  #navigation {
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    background-color: rgb(50, 50, 51);
+    /**ეს მერე გააქტიურე 
+  position: fixed;
+  z-index: 1;
+  **/
+    position: fixed;
+    z-index: 1;
+  }
+  #navigation > div {
+    margin: 1.5%;
+  }
+  #navigation > div > a > button {
+    border: none;
+    background-color: rgba(128, 128, 128, 0);
+    color: white;
+    font-size: 12pt;
+  }
+  .LogInDIV {
+    width: 8%;
+  }
+  #LogIn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+  }
+  #LogIn > div {
+    width: 50%;
+    font-size: 12pt;
+  }
+  #LogIn > div > img {
+    width: 70%;
+  }
+
+  /**centered logo**/
+  #Logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+  }
+  #Logo > div > img {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  #WrenchLogo {
+    width: 35vh;
+  }
+  #Logo > div > h1 {
+    font-size: 30pt;
+    margin: 0;
+    padding: 0;
+  }
+  #Logo > div > p {
+    font-size: 20pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  #SocialMediaBoxParallax1 {
+    width: 100%;
+    height: 50pt;
+    margin-top: 75vh;
+    justify-content: center;
+  }
+
+  #SocialMediaButtonsParallax1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding-top: 3%;
+  }
+  #SocialMediaButtonsParallax1 > div {
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-color: white;
+    /** border-radius: 50%;**/
+    width: 25pt;
+    text-align: center;
+  }
+  .SocialMediaIconsParralax1 {
+    width: 200%;
+  }
+
+  .Parallax1Buttons {
+    background-color: rgba(0, 128, 128, 0);
+    display: flex;
+    border-style: none;
+    justify-content: center;
+  }
+
+  main {
+    height: 600vh;
+    padding: 0;
+    margin: 0;
+  }
+  .parallax2 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/black\ sand.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 110vh;
+  }
+  #textcentered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25pt;
+    padding-top: 20vh;
+    margin: 0;
+  }
+  #SERVICES {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+  #SERVICES > div {
+    text-align: center;
+    width: 14%;
+    margin-top: 10vh;
+  }
+  #SERVICES > div > p {
+    font-size: 15pt;
+  }
+  .parallax3 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/white\ background.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 150vh;
+  }
+  #parallax3 > div > h1 {
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    padding-top: 15vh;
+    margin: 0;
+    font-size: 28pt;
+    color: black;
+  }
+  #parallax3 > div > p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 5vh;
+    font-size: 18pt;
+    color: black;
+  }
+
+  #flexboxParallax3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: column;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 5vh;
+  }
+  #flexboxParallax3 > div {
+    width: 100%;
+  }
+  .HorizontalFlexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    width: 90%;
+  }
+  .HorizontalFlexbox > div {
+    width: 33%;
+    height: 50vh;
+    align-content: center;
+  }
+  .HorizontalFlexbox > div > img {
+    width: 100%;
+    height: 50vh;
+    opacity: 1;
+
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    vertical-align: middle;
+    display: flex;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  .container:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    position: relative;
+    top: 40vh;
+    width: 100%;
+  }
+  .parallax4 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/gray\ background.jpg);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Full height */
+    height: 100vh;
+  }
+  #ABOUTUS {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column;
+
+    font-size: 15pt;
+    height: 80vh;
+    width: 50%;
+    background-color: white;
+    color: black;
+    margin-left: 27%;
+  }
+  #ABOUTUS > p {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .parallax5 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/for\ empty\ div.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 110vh;
+  }
+  .parallax6 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/gray\ background.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 150vh;
+  }
+  #BigCntainer {
+    width: 50%;
+    height: 95vh;
+    background-color: white;
+    color: black;
+    margin-left: 25%;
+    justify-content: center;
+  }
+  #BigCntainer > h1 {
+    margin-left: 41%;
+    padding-top: 11vh;
+  }
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    width: 80%;
+    height: 65vh;
+    margin-left: 10%;
+  }
+  #container > div {
+    width: 40%;
+    text-align: start;
+    margin-top: 5vh;
+  }
+  #container > div > p {
+    width: 75%;
+    margin-top: 0;
+    margin-bottom: 5vh;
+  }
+  #registration > form > div > input,
+  label {
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  #registration > form > div > input {
+    border-width: 1%;
+    border-style: solid;
+  }
+  #registration > form > div > input:hover {
+    border: rgb(90, 90, 90);
+    border-style: solid;
+  }
+
+  #Message {
+    height: 10vh;
+  }
+  #submitButton {
+    border: none;
+    background-color: rgb(50, 50, 51);
+    width: 100%;
+    height: 5vh;
+    color: white;
+    font-size: 12pt;
+  }
+  #submitButton:hover {
+    background-color: darkgrey;
+  }
+
+  /**footer and links **/
+  #SocialMediaBox {
+    width: 100%;
+    height: 150pt;
+    margin-top: 10%;
+    background-color: rgb(50, 50, 51);
+    justify-content: center;
+  }
+  #SocialMediaButtons {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding-top: 3%;
+  }
+  .FooterButtons {
+    background-color: rgba(0, 128, 128, 0);
+    display: flex;
+    border-style: none;
+    justify-content: center;
+  }
+  .SocialMediaIcons {
+    width: 200%;
+  }
+  #SocialMediaButtons > div {
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-color: white;
+    /** border-radius: 50%;**/
+    width: 25pt;
+    text-align: center;
+  }
+  #SocialMediaGmail {
+    padding-top: 2%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    color: white;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .parallax1 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/GTR.jpg);
+
+    /* Full height */
+    height: 150vh;
+  }
+
+  #navigation {
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    background-color: rgb(50, 50, 51);
+    /**ეს მერე გააქტიურე 
+  position: fixed;
+  z-index: 1;
+  **/
+    position: fixed;
+    z-index: 1;
+  }
+  #navigation > div {
+    margin: 1.5%;
+  }
+  #navigation > div > a > button {
+    border: none;
+    background-color: rgba(128, 128, 128, 0);
+    color: white;
+    font-size: 12pt;
+  }
+  .LogInDIV {
+    width: 8%;
+  }
+  #LogIn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+  }
+  #LogIn > div {
+    width: 50%;
+    font-size: 12pt;
+  }
+  #LogIn > div > img {
+    width: 70%;
+  }
+
+  /**centered logo**/
+  #Logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+  }
+  #Logo > div > img {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  #WrenchLogo {
+    width: 35vh;
+  }
+  #Logo > div > h1 {
+    font-size: 30pt;
+    margin: 0;
+    padding: 0;
+  }
+  #Logo > div > p {
+    font-size: 20pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  #SocialMediaBoxParallax1 {
+    width: 100%;
+    height: 50pt;
+    margin-top: 65vh;
+    justify-content: center;
+  }
+
+  #SocialMediaButtonsParallax1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding-top: 3%;
+  }
+  #SocialMediaButtonsParallax1 > div {
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-color: white;
+    /** border-radius: 50%;**/
+    width: 25pt;
+    text-align: center;
+  }
+  .SocialMediaIconsParralax1 {
+    width: 200%;
+  }
+
+  .Parallax1Buttons {
+    background-color: rgba(0, 128, 128, 0);
+    display: flex;
+    border-style: none;
+    justify-content: center;
+  }
+
+  main {
+    height: 600vh;
+    padding: 0;
+    margin: 0;
+  }
+  .parallax2 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/black\ sand.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 110vh;
+  }
+  #textcentered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25pt;
+    padding-top: 20vh;
+    margin: 0;
+  }
+  #SERVICES {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+  #SERVICES > div {
+    text-align: center;
+    width: 14%;
+    margin-top: 10vh;
+  }
+  #SERVICES > div > p {
+    font-size: 15pt;
+  }
+  .parallax3 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/white\ background.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 150vh;
+  }
+  #parallax3 > div > h1 {
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    padding-top: 15vh;
+    margin: 0;
+    font-size: 28pt;
+    color: black;
+  }
+  #parallax3 > div > p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 5vh;
+    font-size: 18pt;
+    color: black;
+  }
+
+  #flexboxParallax3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: column;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 1vh;
+  }
+  #flexboxParallax3 > div {
+    width: 100%;
+  }
+  .HorizontalFlexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    width: 90%;
+  }
+  .HorizontalFlexbox > div {
+    width: 33%;
+    height: 50vh;
+    align-content: center;
+  }
+  .HorizontalFlexbox > div > img {
+    width: 100%;
+    height: 50vh;
+    opacity: 1;
+
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    vertical-align: middle;
+    display: flex;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  .container:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    position: relative;
+    top: 40vh;
+    width: 100%;
+  }
+  .parallax4 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/gray\ background.jpg);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Full height */
+    height: 100vh;
+  }
+  #ABOUTUS {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column;
+
+    font-size: 15pt;
+    height: 80vh;
+    width: 50%;
+    background-color: white;
+    color: black;
+    margin-left: 27%;
+  }
+  #ABOUTUS > p {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .parallax5 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/for\ empty\ div.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 110vh;
+  }
+  .parallax6 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/gray\ background.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 150vh;
+  }
+  #BigCntainer {
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    margin-left: 25%;
+    justify-content: center;
+  }
+  #BigCntainer > h1 {
+    margin-left: 41%;
+    padding-top: 11vh;
+  }
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    width: 80%;
+    height: 65vh;
+    margin-left: 10%;
+  }
+  #container > div {
+    width: 40%;
+    text-align: start;
+    margin-top: 5vh;
+  }
+  #container > div > p {
+    width: 75%;
+    margin-top: 0;
+    margin-bottom: 5vh;
+  }
+  #registration > form > div > input,
+  label {
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  #registration > form > div > input {
+    border-width: 1%;
+    border-style: solid;
+  }
+  #registration > form > div > input:hover {
+    border: rgb(90, 90, 90);
+    border-style: solid;
+  }
+
+  #Message {
+    height: 10vh;
+  }
+  #submitButton {
+    border: none;
+    background-color: rgb(50, 50, 51);
+    width: 100%;
+    height: 5vh;
+    color: white;
+    font-size: 12pt;
+  }
+  #submitButton:hover {
+    background-color: darkgrey;
+  }
+
+  /**footer and links **/
+  #SocialMediaBox {
+    width: 100%;
+    height: 150pt;
+    margin-top: 10%;
+    background-color: rgb(50, 50, 51);
+    justify-content: center;
+  }
+  #SocialMediaButtons {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding-top: 3%;
+  }
+  .FooterButtons {
+    background-color: rgba(0, 128, 128, 0);
+    display: flex;
+    border-style: none;
+    justify-content: center;
+  }
+  .SocialMediaIcons {
+    width: 200%;
+  }
+  #SocialMediaButtons > div {
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-color: white;
+    /** border-radius: 50%;**/
+    width: 25pt;
+    text-align: center;
+  }
+  #SocialMediaGmail {
+    padding-top: 2%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    color: white;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .parallax1 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/GTR.jpg);
+
+    /* Full height */
+    height: 150vh;
+  }
+
+  #navigation {
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    background-color: rgb(50, 50, 51);
+    /**ეს მერე გააქტიურე 
+  position: fixed;
+  z-index: 1;
+  **/
+    position: fixed;
+    z-index: 1;
+  }
+  #navigation > div {
+    margin: 1.5%;
+  }
+  #navigation > div > a > button {
+    border: none;
+    background-color: rgba(128, 128, 128, 0);
+    color: white;
+    font-size: 12pt;
+  }
+  .LogInDIV {
+    width: 10%;
+  }
+  #LogIn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+  }
+  #LogIn > div {
+    width: 50%;
+    font-size: 11pt;
+  }
+  #LogIn > div > img {
+    width: 70%;
+  }
+
+  /**centered logo**/
+  #Logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+  }
+  #Logo > div > img {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  #WrenchLogo {
+    width: 35vh;
+  }
+  #Logo > div > h1 {
+    font-size: 30pt;
+    margin: 0;
+    padding: 0;
+  }
+  #Logo > div > p {
+    font-size: 20pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  #SocialMediaBoxParallax1 {
+    width: 100%;
+    height: 50pt;
+    margin-top: 65vh;
+    justify-content: center;
+  }
+
+  #SocialMediaButtonsParallax1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding-top: 3%;
+  }
+  #SocialMediaButtonsParallax1 > div {
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-color: white;
+    /** border-radius: 50%;**/
+    width: 25pt;
+    text-align: center;
+  }
+  .SocialMediaIconsParralax1 {
+    width: 200%;
+  }
+
+  .Parallax1Buttons {
+    background-color: rgba(0, 128, 128, 0);
+    display: flex;
+    border-style: none;
+    justify-content: center;
+  }
+
+  main {
+    height: 600vh;
+    padding: 0;
+    margin: 0;
+  }
+  .parallax2 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/black\ sand.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 110vh;
+  }
+  #textcentered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25pt;
+    padding-top: 20vh;
+    margin: 0;
+  }
+  #SERVICES {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+  #SERVICES > div {
+    text-align: center;
+    width: 14%;
+    margin-top: 10vh;
+  }
+  #SERVICES > div > p {
+    font-size: 12pt;
+  }
+  .parallax3 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/white\ background.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 150vh;
+  }
+  #parallax3 > div > h1 {
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    padding-top: 15vh;
+    margin: 0;
+    font-size: 28pt;
+    color: black;
+  }
+  #parallax3 > div > p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 5vh;
+    font-size: 18pt;
+    color: black;
+  }
+
+  #flexboxParallax3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: column;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 1vh;
+  }
+  #flexboxParallax3 > div {
+    width: 100%;
+  }
+  .HorizontalFlexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    width: 90%;
+  }
+  .HorizontalFlexbox > div {
+    width: 33%;
+    height: 50vh;
+    align-content: center;
+  }
+  .HorizontalFlexbox > div > img {
+    width: 100%;
+    height: 50vh;
+    opacity: 1;
+
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    vertical-align: middle;
+    display: flex;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  .container:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    background-color: black;
+    color: white;
+    font-size: 14pt;
+    padding: 16px 32px;
+    position: relative;
+    top: 40vh;
+    width: 100%;
+  }
+  .parallax4 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/gray\ background.jpg);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Full height */
+    height: 100vh;
+  }
+  #ABOUTUS {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column;
+
+    font-size: 15pt;
+    height: 80vh;
+    width: 50%;
+    background-color: white;
+    color: black;
+    margin-left: 27%;
+  }
+  #ABOUTUS > p {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .parallax5 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/for\ empty\ div.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 110vh;
+  }
+  .parallax6 {
+    /* The image used */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/gray\ background.jpg);
+    margin: 0;
+    padding: 0;
+    /* Full height */
+    height: 150vh;
+  }
+  #BigCntainer {
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    margin-left: 25%;
+    justify-content: center;
+  }
+  #BigCntainer > h1 {
+    margin-left: 41%;
+    padding-top: 11vh;
+  }
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    width: 80%;
+    height: 65vh;
+    margin-left: 10%;
+  }
+  #container > div {
+    width: 40%;
+    text-align: start;
+    margin-top: 5vh;
+  }
+  #container > div > p {
+    width: 75%;
+    margin-top: 0;
+    margin-bottom: 5vh;
+  }
+  #registration > form > div > input,
+  label {
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+  #registration > form > div > input {
+    border-width: 1%;
+    border-style: solid;
+  }
+  #registration > form > div > input:hover {
+    border: rgb(90, 90, 90);
+    border-style: solid;
+  }
+
+  #Message {
+    height: 10vh;
+  }
+  #submitButton {
+    border: none;
+    background-color: rgb(50, 50, 51);
+    width: 100%;
+    height: 5vh;
+    color: white;
+    font-size: 12pt;
+  }
+  #submitButton:hover {
+    background-color: darkgrey;
+  }
+
+  /**footer and links **/
+  #SocialMediaBox {
+    width: 100%;
+    height: 150pt;
+    margin-top: 10%;
+    background-color: rgb(50, 50, 51);
+    justify-content: center;
+  }
+  #SocialMediaButtons {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding-top: 3%;
+  }
+  .FooterButtons {
+    background-color: rgba(0, 128, 128, 0);
+    display: flex;
+    border-style: none;
+    justify-content: center;
+  }
+  .SocialMediaIcons {
+    width: 200%;
+  }
+  #SocialMediaButtons > div {
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-color: white;
+    /** border-radius: 50%;**/
+    width: 25pt;
+    text-align: center;
+  }
+  #SocialMediaGmail {
+    padding-top: 2%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    color: white;
+  }
+}
